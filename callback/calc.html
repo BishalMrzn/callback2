@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .large-font {
+      font-size: 100px;
+    }
+  </style>
+  <body></body>
+  <script>
+    const add = (a, b) => {
+      return a + b;
+    };
+    const sub = (a, b) => {
+      return a - b;
+    };
+    const multiply = (a, b) => {
+      return a * b;
+    };
+    const divide = (a, b) => {
+      return a / b;
+    };
+    const calc = (x, y, cb) => {
+      return cb(x, y);
+    };
+    console.log(calc(2, 3, add));
+    console.log(calc(2, 3, sub));
+    console.log(calc(2, 3, multiply));
+    document.write(calc(0, 0, divide));
+  </script>
+</html>

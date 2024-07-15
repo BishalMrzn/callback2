@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function func(a, b) {
+      return a + b;
+    }
+    function divide(a, b) {
+      return a / b;
+    }
+    function calculator(x, y, cb) {
+      return cb(x, y);
+    }
+    console.log(calculator(2, 3, func));
+    console.log(calculator(3, 7, divide));
+  </script>
+</html>
